@@ -1,0 +1,38 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-platform-enablement
+  description: Responsible for the dcbnb Developer Portal, templates, and core platform tools.
+spec:
+  type: team
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-frontend-core
+  description: Manages guest-facing and core frontend applications (marketplace, experiences, host portal).
+spec:
+  type: team
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-backend-core
+  description: Responsible for core dcbnb microservices and APIs (listings, bookings, gateway, etc.).
+spec:
+  type: team
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ltsfran
+  description: Luis Tupa (Frontend Consultant / Platform Contributor) # Updated description to reflect dual role
+spec:
+  memberOf: [team-platform-enablement, team-frontend-core, guests]
