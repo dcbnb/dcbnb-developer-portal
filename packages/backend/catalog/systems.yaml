@@ -1,0 +1,39 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dcbnb-core-platform
+  description: The foundational services and applications that power the dcbnb marketplace, including core bookings and listings.
+  tags: [core, platform, dcbnb]
+spec:
+  owner: group:default/team-backend-core
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dcbnb-api-platform
+  description: Encompasses all public and internal APIs that clients and other services interact with, including the main GraphQL Gateway.
+  tags: [api, platform, graphql]
+spec:
+  owner: group:default/team-backend-core
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dcbnb-platform-tools
+  description: Internal applications and infrastructure supporting developer experience, administration, and operations (e.g., admin dashboard, Backstage itself).
+  tags: [internal, tools, devops, admin]
+spec:
+  owner: group:default/team-platform-enablement
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dcbnb-data-platform
+  description: Manages data ingestion, processing, analytics, and reporting capabilities for dcbnb.
+  tags: [data, analytics, pipelines]
+spec:
+  owner: group:default/team-backend-core
