@@ -85,6 +85,11 @@ catalog:
   rules:
     - allow: [Component, System, API, Resource, Location, Template]
   locations:
+    - type: url
+      target: https://github.com/dcbnb/dcbnb-developer-portal/blob/main/catalog-info.yaml
+      rules:
+        - allow: [Component]
+
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
       target: ../../examples/entities.yaml

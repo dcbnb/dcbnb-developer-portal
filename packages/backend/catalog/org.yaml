@@ -35,4 +35,4 @@ metadata:
   name: ltsfran
   description: Luis Tupa (Frontend Consultant / Platform Contributor) # Updated description to reflect dual role
 spec:
-  memberOf: [team-platform-enablement, team-frontend-core, guests]
+  memberOf: [team-platform-enablement, team-frontend-core]
