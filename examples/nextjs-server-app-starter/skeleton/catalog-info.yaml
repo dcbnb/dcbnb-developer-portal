@@ -1,0 +1,15 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ values.name | dump }}
+  description: ${{ values.description | dump }}
+  annotations:
+    github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
+    backstage.io/techdocs-ref: url:.
+  tags: [nextjs, react, web-app, frontend, ssr]
+spec:
+  type: website
+  owner: ${{ values.owner | dump }}
+  lifecycle: experimental
+  system: dcbnb-core-platform
