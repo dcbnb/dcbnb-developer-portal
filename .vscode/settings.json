@@ -3,13 +3,17 @@
         "autofocus",
         "cicd",
         "Dcbnb",
+        "esbuild",
+        "eslintcache",
         "Exampler",
+        "logomark",
         "ltsfran",
         "nextjs",
         "PGSSLMODE",
         "scaffolder",
         "sslmode",
         "techdocs",
-        "Tupa"
+        "Tupa",
+        "vercel"
     ]
 }
