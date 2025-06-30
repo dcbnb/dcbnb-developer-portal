@@ -90,6 +90,11 @@ catalog:
       rules:
         - allow: [Component]
 
+    - type: url
+      target: https://github.com/dcbnb/nextjs-server-app-starter/blob/main/template.yaml
+      rules:
+        - allow: [Template]
+
     - type: file
       target: ../../packages/backend/catalog/org.yaml
       rules:
@@ -100,22 +105,6 @@ catalog:
       rules:
         - allow: [System]
 
-    - type: file
-      target: ../../examples/nextjs-server-app-starter/template.yaml
-      rules:
-        - allow: [Template]
-
-    ## Uncomment these lines to add more example data
-    # - type: url
-    #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
-
-    ## Uncomment these lines to add an example org
-    # - type: url
-    #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
-    #   rules:
-    #     - allow: [User, Group]
-  # Experimental: Always use the search method in UrlReaderProcessor.
-  # New adopters are encouraged to enable it as this behavior will be the default in a future release.
   useUrlReadersSearch: true
 
 kubernetes:
